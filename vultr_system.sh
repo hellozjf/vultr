@@ -9,7 +9,7 @@ systemctl stop firewalld
 systemctl disable firewalld
 
 # 3. 配置交换分区
-fallocate -l 1G /swapfile
+fallocate -l 2G /swapfile
 chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
