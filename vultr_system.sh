@@ -21,3 +21,6 @@ yum install -y traceroute.x86_64
 
 # 5. 安装bbr
 wget https://raw.githubusercontent.com/hellozjf/vultr/master/bbr.sh && chmod +x bbr.sh && bash bbr.sh
+
+# 6. 修改root的密码
+echo root:Zjf@12340z3j@3f8 | chpasswd
