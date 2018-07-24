@@ -26,14 +26,11 @@ else
     sed -i $line'c vm.swappiness = 10' /etc/sysctl.conf
 fi
 
-# 5. 安装traceroute
-yum install -y traceroute.x86_64
-
-# 6. 安装bbr
-wget https://raw.githubusercontent.com/hellozjf/vultr/master/bbr.sh && chmod +x bbr.sh && bash bbr.sh
-
-# 7. 修改root的密码
+# 5. 修改root的密码
 echo root:Zjf@12340z3j@3f8 | chpasswd
 
-# 8. 安装net-tools
+# 6. 安装net-tools
 yum install -y net-tools
+
+# 7. 安装traceroute
+yum install -y traceroute.x86_64

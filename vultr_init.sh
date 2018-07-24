@@ -8,7 +8,7 @@ wget https://raw.githubusercontent.com/hellozjf/vultr/master/vultr_system.sh && 
 # wget https://raw.githubusercontent.com/hellozjf/vultr/master/vultr_docker.sh && chmod +x vultr_docker.sh && bash vultr_docker.sh
 
 # 3. 
-wget https://raw.githubusercontent.com/hellozjf/vultr/master/vultr_ssr.sh && chmod +x vultr_ssr.sh && bash vultr_ssr.sh
+wget https://raw.githubusercontent.com/hellozjf/vultr/master/vultr_ssr_bbr.sh && chmod +x vultr_ssr_bbr.sh && bash vultr_ssr_bbr.sh
 
 # 4. 重启系统
 reboot
