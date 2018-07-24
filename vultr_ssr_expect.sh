@@ -20,5 +20,6 @@ expect "(默认: 无限):"
 send "\r"
 expect "Is this ok"
 send "y\r"
+set timeout 60
 expect eof
 exit
