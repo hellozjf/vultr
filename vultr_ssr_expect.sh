@@ -1,4 +1,5 @@
 #!/usr/bin/expect
+set timeout 600
 spawn bash ssr.sh
 expect "请输入数字"
 send "1\r"
