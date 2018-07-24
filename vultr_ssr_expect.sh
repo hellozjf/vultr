@@ -18,7 +18,7 @@ expect "(默认: 无限):"
 send "\r"
 expect "(默认: 无限):"
 send "\r"
-expect "Is this ok [y/d/N]"
+expect "Is this ok"
 send "y\r"
 expect eof
 exit
