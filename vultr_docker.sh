@@ -13,3 +13,9 @@ docker run -d -p 10101:10101 --name ss --restart unless-stopped mritd/shadowsock
 
 # 4. 安装vsftpd
 docker run -d -p 20:20 -p 21:21 -p 21100-21110:21100-21110 --name vsftpd --restart unless-stopped -v /root/ftp:/home/vsftpd/hellozjf -e FTP_USER=hellozjf -e FTP_PASS=Zjf@1234 fauria/vsftpd
+
+# 5. 安装eureka
+#docker run -d -p 8761:8761 --name eureka --restart unless-stopped springcloud/eureka
+
+# 6. 安装MySQL
+# docker run -d -p 3306:3306 --name mysql --restart unless-stopped -e MYSQL_ROOT_PASSWORD=Zjf@1234 mysql

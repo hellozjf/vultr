@@ -4,7 +4,7 @@
 # 1. 设置hostname
 echo "vultr.hellozjf.com" >/etc/hostname
 
-# 2. 关闭防火墙
+# 2. 关闭防火墙 ufw disable
 systemctl stop firewalld
 systemctl disable firewalld
 
@@ -34,3 +34,9 @@ yum install -y net-tools
 
 # 7. 安装traceroute
 yum install -y traceroute.x86_64
+
+# 8. 写入dns /etc/resolvconf/resolv.conf.d/base
+if [ ! -f "/etc/sysconfig/network-scripts/ifcfg-eth0_backup" ]; then
+    cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0_backup
+	echo "DNS1=8.8.8.8" >>/etc/sysconfig/network-scripts/ifcfg-eth0
+fi
